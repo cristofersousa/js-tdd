@@ -4,6 +4,8 @@
   "description": "My library TDD with Javascript",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/cristofersousa/js-tdd/issues"
   },
-  "homepage": "https://github.com/cristofersousa/js-tdd#readme"
+  "homepage": "https://github.com/cristofersousa/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.1"
+  }
 }
